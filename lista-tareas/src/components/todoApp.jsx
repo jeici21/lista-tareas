@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Todo from "./todo";
 
 export default function TodoApp() {
     const [title, setTitle] = useState("Hola");
@@ -6,7 +7,7 @@ export default function TodoApp() {
     const handleChange = (event) => {
         const value = event.target.value;
         setTitle(value);
-    }//guardando valor cada vez que se escribe en el input
+    };//guardando valor cada vez que se escribe en el input
     const handleSubmit = (e) => {
         e.preventDefault();
         const newTodo = {
@@ -15,7 +16,13 @@ export default function TodoApp() {
             completed: false
         };
         setTodos([...todos, newTodo]);
-    }//guardando el nuevo registro
+    };//guardando el nuevo registro
+    const handleUpdate = (id, value) => {
+        const temp = [...todos];
+        const item = temp.find(item => item.id === id);
+        item.title = value;
+        setTodos(temp);
+    };//actualizando registro
 
     return (
         <div className="todoContainer">
@@ -26,7 +33,7 @@ export default function TodoApp() {
             <div className="todosContainer">
                 {
                     todos.map(item => (
-                        <div key={item.id}>{item.title}</div>
+                        <Todo key={item.id} item={item} onUpdate={handleUpdate} />
                     ))//mostrando cada elemento del arreglo
                 }
             </div>
