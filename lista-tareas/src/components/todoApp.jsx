@@ -10,13 +10,17 @@ export default function TodoApp() {
     };//guardando valor cada vez que se escribe en el input
     const handleSubmit = (e) => {
         e.preventDefault();
-        const newTodo = {
-            id: crypto.randomUUID(),
-            title: title,
-            completed: false
-        };
-        setTodos([...todos, newTodo]);
-        setTitle("");
+        if (title !== "") {
+            const newTodo = {
+                id: crypto.randomUUID(),
+                title: title,
+                completed: false
+            };
+            setTodos([...todos, newTodo]);
+            setTitle("");
+        } else {
+            alert("Inserte un registro válido");
+        }
     };//guardando el nuevo registro
     const handleUpdate = (id, value) => {
         const temp = [...todos];
@@ -31,9 +35,10 @@ export default function TodoApp() {
 
     return (
         <div className="todoContainer">
+            <h1>Lista de tareas</h1>
             <form className="todoCreateForm" onSubmit={handleSubmit}>
                 <input onChange={handleChange} className="todoInput" value={title} />
-                <input onClick={handleSubmit} type="submit" className="buttonCreate" value="Create todo" />
+                <input onClick={handleSubmit} type="submit" className="buttonCreate" value="✅Create todo" />
             </form>
             <div className="todosContainer">
                 {

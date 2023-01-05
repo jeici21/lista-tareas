@@ -19,7 +19,7 @@ export default function Todo({ item, onUpdate, onDelete }) {
         return (
             <form className="todoUpdateForm" onSubmit={handleSubmit}>
                 <input type="text" className="todoInput" onChange={handleChange} value={newValue} />
-                <button className="button" onClick={handleClickUpdateTodo}>Update</button>
+                <button className="button" onClick={handleClickUpdateTodo}>🆗Update</button>
             </form>
         )
     }
@@ -27,8 +27,8 @@ export default function Todo({ item, onUpdate, onDelete }) {
         return (
             <div className="todoInfo">
                 <span className="todoTitle">{item.title}</span>
-                <button className="buttonUpdate" onClick={() => setIsEdit(true)}>Edit</button>
-                <button className="buttonDelete" onClick={(e) => onDelete(item.id)}>Delete</button>
+                <button className="buttonUpdate" onClick={() => setIsEdit(true)}>📝Edit</button>
+                <button className="buttonDelete" onClick={(e) => onDelete(item.id)}>❎Delete</button>
             </div>
         )
     }

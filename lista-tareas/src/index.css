@@ -1,11 +1,29 @@
+/* Modo claro */
+:root {
+  --body-bg: #e6e6e6;
+  --body-color: #000;
+}
+
+/* Modo oscuro */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --body-bg: #282828;
+    --body-color: #e6e6e6;
+  }
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Samsung Sans Regular', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #efefef;
+  background: var(--body-bg);
+  color: var(--body-color);
+}
+
+@font-face {
+  font-family: 'Samsung Sans Regular';
+  src: local('Samsung Sans Regular'), url(./fonts/SamsungSans-Regular.ttf) format('truetype');
 }
 
 code {

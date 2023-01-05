@@ -1,8 +1,11 @@
 .todoContainer {
-    width: 500px;
-    margin: 100px auto;
+    width: 100%;
+    margin: auto;
     display: flex;
     flex-direction: column;
+}
+h1{
+    text-align: center;
 }
 
 .todoCreateForm {
@@ -16,14 +19,29 @@
     padding: 10px;
     border-radius: 3px;
     border: solid 1px #999;
+    font-family: 'Samsung Sans Regular';
+    color: black;
 }
 
 .buttonCreate {
     border: none;
     border-radius: 3px;
-    background-color: rgb(26, 76, 169);
-    color: white;
+    background-image: -webkit-linear-gradient(top, #eb94d0, #2079b0);
+    background-image: -moz-linear-gradient(top, #eb94d0, #2079b0);
+    background-image: -o-linear-gradient(top, #eb94d0, #2079b0);
+    background-image: linear-gradient(to bottom, #eb94d0, #2079b0);
+    color: #fafafa;
+    font-size: 14px;
     padding: 10px 20px;
+    font-family: 'Samsung Sans Regular';
+}
+
+.buttonCreate:hover {
+    background-image: -webkit-linear-gradient(top, #2079b0, #eb94d0);
+    background-image: -moz-linear-gradient(top, #2079b0, #eb94d0);
+    background-image: -o-linear-gradient(top, #2079b0, #eb94d0);
+    background-image: linear-gradient(to bottom, #2079b0, #eb94d0);
+    cursor: pointer;
 }
 
 .todosContainer {
@@ -35,7 +53,7 @@
 
 .todo {
     padding: 10px;
-    background-color: white;
+    background: none;
 }
 
 .todoTitle {
@@ -53,11 +71,35 @@
 button {
     border: none;
     border-radius: 3px;
-    background-color: rgb(72, 122, 221);
-    color: white;
+    background-image: -webkit-linear-gradient(top, #94ebc1, #25b020);
+    background-image: -moz-linear-gradient(top, #94ebc1, #25b020);
+    background-image: -o-linear-gradient(top, #94ebc1, #25b020);
+    background-image: linear-gradient(to bottom, #94ebc1, #25b020);
+    color: #fafafa;
+    font-size: 14px;
     padding: 10px 20px;
+    font-family: 'Samsung Sans Regular';
 }
 
 .buttonDelete {
-    background-color: rgb(169, 26, 26);
+    background-image: -webkit-linear-gradient(top, #eb94c1, #b02520);
+    background-image: -moz-linear-gradient(top, #eb94c1, #b02520);
+    background-image: -o-linear-gradient(top, #eb94c1, #b02520);
+    background-image: linear-gradient(to bottom, #eb94c1, #b02020);
+}
+
+.buttonUpdate:hover {
+    background-image: -webkit-linear-gradient(top, #25b020, #94ebc1);
+    background-image: -moz-linear-gradient(top, #25b020, #94ebc1);
+    background-image: -o-linear-gradient(top, #25b020, #94ebc1);
+    background-image: linear-gradient(to bottom, #25b020, #94ebc1);
+    cursor: pointer;
+}
+
+.buttonDelete:hover {
+    background-image: -webkit-linear-gradient(top, #b02520, #eb94c1);
+    background-image: -moz-linear-gradient(top, #b02520, #eb94c1);
+    background-image: -o-linear-gradient(top, #b02520, #eb94c1);
+    background-image: linear-gradient(to bottom, #b02520, #eb94c1);
+    cursor: pointer;
 }
