@@ -2,7 +2,7 @@
 
 # Portfolio
 
-- In this repository you can find My Playground.
+- In this repository you can find My Tasklist website.
 
 <img src='template.png'>
 
@@ -20,7 +20,7 @@
 
 ## Run it
 
-Use the following steps to run this Portfolio locally:
+Use the following steps to run this project locally:
 
 - open the terminal
 
