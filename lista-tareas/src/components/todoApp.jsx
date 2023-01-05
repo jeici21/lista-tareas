@@ -10,7 +10,7 @@ export default function TodoApp() {
     };//guardando valor cada vez que se escribe en el input
     const handleSubmit = (e) => {
         e.preventDefault();
-        if (title !== "") {
+        if (title !== "") {//validando campos vacíos
             const newTodo = {
                 id: crypto.randomUUID(),
                 title: title,
