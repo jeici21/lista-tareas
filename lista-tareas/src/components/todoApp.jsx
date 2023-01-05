@@ -16,6 +16,7 @@ export default function TodoApp() {
             completed: false
         };
         setTodos([...todos, newTodo]);
+        setTitle("");
     };//guardando el nuevo registro
     const handleUpdate = (id, value) => {
         const temp = [...todos];
@@ -23,6 +24,10 @@ export default function TodoApp() {
         item.title = value;
         setTodos(temp);
     };//actualizando registro
+    const handleDelete = (id) => {
+        const temp = todos.filter(item => item.id !== id);
+        setTodos(temp);
+    };//eliminando registro
 
     return (
         <div className="todoContainer">
@@ -33,7 +38,7 @@ export default function TodoApp() {
             <div className="todosContainer">
                 {
                     todos.map(item => (
-                        <Todo key={item.id} item={item} onUpdate={handleUpdate} />
+                        <Todo key={item.id} item={item} onUpdate={handleUpdate} onDelete={handleDelete} />
                     ))//mostrando cada elemento del arreglo
                 }
             </div>
