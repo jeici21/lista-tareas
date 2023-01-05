@@ -36,7 +36,7 @@ Use the following steps to run this Portfolio locally:
 
 For a live demo please click on the following link:
 
-https://playground-kruger-jeici21.netlify.app/
+https://lista-tareas-jeici21.netlify.app/
 
 ## Authors
 
@@ -49,4 +49,4 @@ https://playground-kruger-jeici21.netlify.app/
 
 ## 🙏 Acknowledgements
 
-[Vida MMR](https://www.youtube.com/@vidamrr)
+[Vida MMR](https://www.youtube.com/@vidamrr) - Main source to develop this website.
