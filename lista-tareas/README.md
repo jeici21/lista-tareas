@@ -1,10 +1,10 @@
-<img src='lista-tareas/image.png' width='100px' height='100px'>
+<img src='image.png' width='100px' height='100px'>
 
-# Lista de tareas
+# Portfolio
 
 - In this repository you can find My Tasklist website.
 
-<img src='lista-tareas/template.png'>
+<img src='template.png'>
 
 ## Built With
 
