@@ -1,10 +1,11 @@
-<img src='lista-tareas/image.png' width='100px' height='100px'>
+<!--markdownlint-disable MD041-->
+<img src='lista-tareas/image.png' width='100px' height='100px' alt="Portada">
 
 # Lista de tareas
 
 - In this repository you can find My Tasklist website.
 
-<img src='lista-tareas/template.png'>
+<img src='lista-tareas/template.png' alt="Imagen">
 
 ## Built With
 
@@ -31,12 +32,6 @@ Use the following steps to run this project locally:
 - open the folder with a code editor (VS Code preferred)
 
 - go to the index.html file and open it with live server
-
-### Deployment
-
-For a live demo please click on the following link:
-
-https://lista-tareas-jeici21.netlify.app/
 
 ## Authors
 
